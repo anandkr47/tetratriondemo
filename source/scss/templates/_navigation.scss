@@ -161,7 +161,7 @@ ul.top-info li p.info-text {
 }
 ul.navbar-nav>li>a {
   padding: 15px 0 !important;
-  color: black;
+  color: #fff;
 }
 @include desktop {
   ul.navbar-nav>li>a {
@@ -382,7 +382,7 @@ ul.navbar-nav>li>a i {
   }
   .header-two {
     ul.navbar-nav>li>a i {
-        color: #fff;
+        color:black;
     }
     ul.navbar-nav>li.active>a i,
     ul.navbar-nav>li>a.active i {
