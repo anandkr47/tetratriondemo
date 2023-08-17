@@ -323,25 +323,6 @@ ul.top-info-box>li.nav-search i {
     outline: 0;
   }
 }
-// For small screens, adjust the logo size and alignment
-// For small screens, adjust the logo size and alignment
-// For small screens, adjust the logo size and alignment
-@media (max-width: 768px) {
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-    margin-right: 10px; // Adjust the margin as needed
-  }
-
-  .navbar-toggler {
-    margin-left: auto;
-  }
-
-  #search {
-    margin-left: 10px; // Adjust the margin as needed
-  }
-}
-
 
 .navbar-dark .navbar-toggler-icon,
 .navbar-light .navbar-toggler-icon {
