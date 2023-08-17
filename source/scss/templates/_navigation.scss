@@ -323,18 +323,22 @@ ul.top-info-box>li.nav-search i {
     outline: 0;
   }
 }
-// For small screens, adjust the logo size and alignment
+
 @media (max-width: 768px) {
-  .logo {
-    text-align: center; // Center the logo
-    margin-right: 300px; // Adjust the margin as needed
-  }
-  
-  // Adjust the toggler and search icon alignment
   .navbar-toggler {
     margin-right: 10px; // Adjust the margin as needed
   }
-  
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; // Adjust the margin as needed
+    
+    a {
+      display: inline-block;
+    }
+  }
+
   #search {
     margin-left: 10px; // Adjust the margin as needed
   }
