@@ -324,19 +324,27 @@ ul.top-info-box>li.nav-search i {
   }
 }
 // For small screens, adjust the logo size and alignment
+// For small screens, adjust the logo size and alignment
 @media (max-width: 768px) {
-  .logo {
-    text-align: center; // Center the logo
-    margin-bottom: 100px; // Adjust the margin as needed
-  }
+  .site-navigation {
+    .navbar-toggler {
+      margin-right: 10px; // Adjust the margin as needed
+    }
   
-  // Adjust the toggler and search icon alignment
-  .navbar-toggler {
-    margin-right: 10px; // Adjust the margin as needed
-  }
-  
-  #search {
-    margin-left: 10px; // Adjust the margin as needed
+    .logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px; // Adjust the margin as needed
+
+      a {
+        display: inline-block;
+      }
+    }
+    
+    #search {
+      margin-left: 10px; // Adjust the margin as needed
+    }
   }
 }
 
