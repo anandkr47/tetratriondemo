@@ -324,25 +324,6 @@ ul.top-info-box>li.nav-search i {
   }
 }
 
-@media (max-width: 768px) {
-  .navbar-toggler {
-    margin-right: 10px; // Adjust the margin as needed
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; // Adjust the margin as needed
-    
-    a {
-      display: inline-block;
-    }
-  }
-
-  #search {
-    margin-left: 10px; // Adjust the margin as needed
-  }
-}
 
 
 .navbar-dark .navbar-toggler-icon,
