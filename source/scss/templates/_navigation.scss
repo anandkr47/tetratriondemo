@@ -382,7 +382,7 @@ ul.navbar-nav>li>a i {
   }
   .header-two {
     ul.navbar-nav>li>a i {
-        color:black;
+        color: #fff;
     }
     ul.navbar-nav>li.active>a i,
     ul.navbar-nav>li>a.active i {
@@ -398,9 +398,9 @@ ul.navbar-nav>li>a:after {
 
 ul.navbar-nav>li>a {
   font-family: $font-secondary;
-  color: #fff !important;
+  color: black !important;
   text-rendering: optimizeLegibility;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
   text-transform: uppercase;
   letter-spacing: -.2px;
   font-size: 14px;
