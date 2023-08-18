@@ -1,3 +1,34 @@
+<style>
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.alternate-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+
+</style>
 @@include('header.htm')
 @@include('blocks/navigation-1.htm')
 @@include('blocks/page-header.htm', {"title": "About", "prevpage": "company", "currentpage": "About Us"})
@@ -176,6 +207,28 @@
 
 
 @@include('blocks/facts-counter.htm')
+
+<div class="team-container">
+  <section class="alternate-section">
+    <div class="image">
+      <img src="image1.jpg" alt="Image 1">
+    </div>
+    <div class="content">
+      <h2>Section 1 Heading</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non ex vel orci scelerisque fringilla.</p>
+    </div>
+  </section>
+  <section class="alternate-section">
+    <div class="image">
+      <img src="image2.jpg" alt="Image 2">
+    </div>
+    <div class="content">
+      <h2>Section 2 Heading</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non ex vel orci scelerisque fringilla.</p>
+    </div>
+  </section>
+  <!-- Add more sections as needed -->
+</div>
 
 <section id="ts-team" class="ts-team">
   <div class="container">
