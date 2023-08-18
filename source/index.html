@@ -11,7 +11,13 @@
   padding-top:10em;
 }
 
-
+.typing-container {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 10em;
+  overflow: hidden;
+}
 
 
 </style>
@@ -82,7 +88,7 @@ var TxtType = function(el, toRotate, period) {
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid black}";
         document.body.appendChild(css);
     };
 </script>
