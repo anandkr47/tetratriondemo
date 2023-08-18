@@ -39,6 +39,25 @@
   max-width: 800px; /* Set a max width for the content */
   margin: 0 auto; /* Center the content horizontally */
 }
+.banner-area {
+  background-color: #4CAF50; /* Green background color */
+  text-align: center; /* Center-align the text */
+  padding: 20px; /* Add some padding for spacing */
+}
+
+.banner-area h1 {
+  color: #fff; /* White text color */
+  font-size: 24px; /* Adjust font size as needed */
+  white-space: nowrap; /* Prevent text from wrapping to multiple lines */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Display ellipsis (...) for overflowing text */
+}
+
+@media (min-width: 768px) {
+  .banner-area h1 {
+    font-size: 32px; /* Increase font size for desktop mode */
+  }
+}
 
   
   </style>
@@ -161,6 +180,9 @@
   </div><!-- Container end -->
 </section><!-- Feature area end -->
 
+<div class="banner-area">
+  <h1>We Have Noticed Our Buyers Personas Carrying Some Common Concern. Allying those Fears.</h1>
+</div>
 
 @@include('blocks/facts-counter.htm')
 
@@ -209,9 +231,7 @@
   </section>
   <!-- Add more sections as needed -->
 </div>
-<div class="banner-area">
-  <h1>We Have Noticed Our Buyers Personas Carrying Some Common Concern.Allying those Fears.</h1>
-</div>
+
 <section id="ts-team" class="ts-team">
   <div class="container">
     <div class="row text-center">
