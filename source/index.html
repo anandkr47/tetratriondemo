@@ -3,23 +3,14 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #000;
-  color: #eee;
-}
-.container {
+
+.text-container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container p {
+.text-container p {
   font-size: 3rem;
   padding: 0.5rem;
   font-weight: bold;
@@ -27,18 +18,18 @@ body {
   text-align: center;
   overflow: hidden;
 }
-.container p span.typed-text {
+.text-container p span.typed-text {
   font-weight: bold;
   color: #25c48f;
 }
-.container p span.cursor {
+.text-container p span.cursor {
   display: inline-block;
   background-color: #ccc;
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
 }
-.container p span.cursor.typing {
+.text-container p span.cursor.typing {
   animation: none;
 }
 @keyframes blink {
@@ -53,7 +44,7 @@ body {
 
 </style>
   
-<div class="container">
+<div class="text-container">
   <p>Coding is <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
 </div>
 
