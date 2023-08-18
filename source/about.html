@@ -1,37 +1,47 @@
-<style>
-.team-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
 
-.alternate-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.image img {
-  max-width: 100%;
-  height: auto;
-}
-
-.content {
-  flex: 1;
-  padding: 20px;
-}
-
-h2 {
-  margin-top: 0;
-}
-
-
-</style>
 @@include('header.htm')
 @@include('blocks/navigation-1.htm')
 @@include('blocks/page-header.htm', {"title": "About", "prevpage": "company", "currentpage": "About Us"})
+<style>
+  .team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .alternate-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  #ts-features {
+  padding: 100px 0; /* Add vertical padding to center the content */
+  text-align: center; /* Center the content horizontally */
+}
+
+.ts-intro {
+  max-width: 800px; /* Set a max width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+  
+  </style>
 
 <section id="main-container" class="main-container">
   <div class="container">
@@ -88,71 +98,68 @@ h2 {
 <section id="ts-features" class="ts-features">
   <div class="container">
     <div class="row">
-        <div class="col-lg-6">
-          <div class="ts-intro">
-              <h2 class="into-title">About Us</h2>
-              <h3 class="into-sub-title">We deliver landmark projects</h3>
-              <p>We are rethoric question ran over her cheek When she reached the first hills of the Italic Mountains,
-                she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village
-                and the subline of her own road, the Line Lane.</p>
-          </div><!-- Intro box end -->
+      <div class="col-lg-12 text-center">
+        <div class="ts-intro">
+          <h2 class="into-title">About Us</h2>
+          <h3 class="into-sub-title">We deliver landmark projects</h3>
+          <p>We are rethoric question ran over her cheek When she reached the first hills of the Italic Mountains,
+            she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village
+            and the subline of her own road, the Line Lane.</p>
+        </div><!-- Intro box end -->
 
-          <div class="gap-20"></div>
+        <div class="gap-20"></div>
 
-          <div class="row">
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas fa-trophy"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">We've Repution for Excellence</h3>
-                    </div>
-                </div><!-- Service 1 end -->
-              </div><!-- col end -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fas fa-trophy"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">We've Repution for Excellence</h3>
+              </div>
+            </div><!-- Service 1 end -->
+          </div><!-- col end -->
 
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas fa-sliders-h"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">We Build Partnerships</h3>
-                    </div>
-                </div><!-- Service 2 end -->
-              </div><!-- col end -->
-          </div><!-- Content row 1 end -->
+          <div class="col-md-6">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fas fa-sliders-h"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">We Build Partnerships</h3>
+              </div>
+            </div><!-- Service 2 end -->
+          </div><!-- col end -->
+        </div><!-- Content row 1 end -->
 
-          <div class="row">
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas fa-thumbs-up"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">Guided by Commitment</h3>
-                    </div>
-                </div><!-- Service 1 end -->
-              </div><!-- col end -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fas fa-thumbs-up"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">Guided by Commitment</h3>
+              </div>
+            </div><!-- Service 1 end -->
+          </div><!-- col end -->
 
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas fa-users"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">A Team of Professionals</h3>
-                    </div>
-                </div><!-- Service 2 end -->
-              </div><!-- col end -->
-          </div><!-- Content row 1 end -->
-        </div><!-- Col end -->
-
-        
+          <div class="col-md-6">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fas fa-users"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">A Team of Professionals</h3>
+              </div>
+            </div><!-- Service 2 end -->
+          </div><!-- col end -->
+        </div><!-- Content row 1 end -->
+      </div><!-- Col end -->
     </div><!-- Row end -->
   </div><!-- Container end -->
-</section><!-- Feature are end -->
-
+</section><!-- Feature area end -->
 
 
 @@include('blocks/facts-counter.htm')
