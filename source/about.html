@@ -4,24 +4,56 @@
 @@include('blocks/page-header.htm', {"title": "About", "prevpage": "company", "currentpage": "About Us"})
 <style>
  
- #myimages {
-    align-items: center;
-    justify-content: center;
-    margin-bottom: auto;
+ .myimages-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+.myimage {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.myimage .mypicture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.my-text {
+  flex: 2;
+}
+
+.my-text h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.my-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .myimages-container {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .mypicture {
-    max-width: 25%;
-    max-height:15%;
-    float: left;
+
+  .myimage {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
-  
+
   .my-text {
-    font-size: 20px;
-    
-    padding-top: 5%;
-    float: left;
+    width: 100%;
   }
+}
+
   
   h2 {
     margin-top: 0;
