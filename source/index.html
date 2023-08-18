@@ -158,7 +158,7 @@ a:hover {
 </style>
   
 <div class="typing-container">
-  <h1><span class="txt-type" data-wait="2500" data-words='["Website?", "Designer?", "Photographer?"]'></span><i class="fas fa-pencil-alt"></i></h1>
+  <h1><span class="txt-type" data-wait="2500" data-words='["Website?", "Designer?", "Photographer?"]'></span><i class="fas fa-i-cursor"></i></h1>
   
 </div>
 
@@ -218,9 +218,9 @@ class TypeWriter {
         }
  
         if(this.isDeleting){
-            typingElement.className = "fas fa-pencil-alt erasing-animation";
+            typingElement.className = "fas fa-i-cursor erasing-animation";
         }else{
-            typingElement.className = "fas fa-pencil-alt writing-animation";
+            typingElement.className = "fas fa-i-cursor writing-animation";
         }
 
         // if word is complete
@@ -230,7 +230,7 @@ class TypeWriter {
             //set delete to true
             this.isDeleting = true;
             //will stop the pencil animation after word completion
-            typingElement.className = "fas fa-pencil-alt";
+            typingElement.className = "fas fa-i-cursor";
 
 
         } else if (this.isDeleting && this.txt === ''){
