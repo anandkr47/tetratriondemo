@@ -107,11 +107,16 @@
 
 /* Large header */
 .large-header{
-	background:White 100%;
-    text-align:center
+	
+  position: relative;
 	}
 #x-canvas{
-  opacity:0.5
+  opacity:0.5;
+  position: absolute; /* Position the canvas absolutely within .canvas-container */
+    top: 0;
+    left: 0;
+    z-index: 0; 
+  
 }
 </style>
 </head>
@@ -243,7 +248,7 @@
 <div id="large-header" class="large-header">
   
   <canvas id="x-canvas"></canvas>
-
+</div>
 
 
 
@@ -251,6 +256,10 @@
       <div class="myimage">
         <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
       </div>
+      <div id="large-header" class="large-header">
+  
+        <canvas id="x-canvas"></canvas>
+      
       <div class="my-text">
         
         <strong><h1>CEOs.</h1></strong>
@@ -267,7 +276,7 @@
           
           We would not have survived this long if we weren’t good at anticipating and keeping up with the rapid pace of change this industry is accustomed to witnessing.</p>
         </div>
-      
+      </div>
     </div>
 
       <div class="myimages-container">
@@ -338,7 +347,6 @@
             <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
           </div>
         </div>
-</div>
     
 <script>
 // MIT license
