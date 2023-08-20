@@ -119,7 +119,10 @@
     top: 0;
     left: 0;
     opacity: 0.5;
+    z-index: -1; /* Move the canvas below the content */
+    pointer-events: none; /* Prevent canvas from blocking interactions */
 }
+
 
 /* Footer styles */
 /* Add your footer styles here */
@@ -137,7 +140,7 @@
     @@include('blocks/facts-counter.htm')
   
     <div id="large-header" class="large-header">
-        <canvas id="x-canvas"></canvas>
+        
     </div>
   
     <div class="myimages-container">
@@ -160,7 +163,7 @@
             <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
         </div>
     </div>
-    
+    <canvas id="x-canvas"></canvas>
     <div class="myimages-container">
         <div class="myimage">
             <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
