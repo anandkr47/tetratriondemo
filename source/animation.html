@@ -107,6 +107,11 @@
 
 }
 
+.animation-bg {
+  margin:0;
+  overflow:hidden;
+  height:100%
+}
 #x-canvas{
   opacity:0.5
 }
@@ -129,6 +134,8 @@
   
     @@include('blocks/facts-counter.htm')
   
+
+    <div class="animation-bg">
     <div id="large-header" class="large-header">
       <div class="about-container">
         <div class="myimages-container">
@@ -227,7 +234,7 @@
 
            <canvas id="x-canvas"></canvas>
  </div>
- 
+</div>
     
     <script>
         // Your animation script
