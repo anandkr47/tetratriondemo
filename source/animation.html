@@ -7,19 +7,111 @@
     <style>
 
 
-.my-text{
+
+.myimage {
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.myimage .mypicture {
+  max-width: 100%;
+  height: 70%;
+  display: block;
+  margin-bottom: 10px;
+  height: 500px;
+}
+
+.my-text {
+  flex: 2;
+}
+
+.my-text h1 {
+  
+  margin-bottom: 10px;
+  box-shadow: inset;
+  line-height: 1.6;
+    font-weight: 900;
+    color: #3a3d41;
+
+}
+
+.my-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .myimages-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px; /* Reduce margin between containers */
+  }
+
+  .myimage {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .myimage.ml-2 {
+    margin-left: 0; /* Remove left margin for the last image */
+  }
+
+  .my-text {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+}
+ 
+  h2 {
+    margin-top: 0;
+  }
+  #ts-features {
+  padding: 10px 0; /* Add vertical padding to center the content */
+  text-align: center; /* Center the content horizontally */
+}
+
+.ts-intro {
+  max-width: 800px; /* Set a max width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+}
+.banners {
+  background-color: #049c69; /* Green background color */
+  text-align: center; /* Center-align the text */
+  height: 50px;
+}
+
+.banners h1 {
+  color: #fff; /* White text color */
+  font-size: 20px; /* Adjust font size as needed */
+ 
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Display ellipsis (...) for overflowing text */
+}
+
+@media (min-width: 768px) {
+  .banners h1 {
+    font-size: 32px; /* Increase font size for desktop mode */
+  }
+
+}
+
+.myimages-container{
   width:100%;
   max-width:250px;
   position:absolute;
   top:45%;
   left:0;
   right:0;
-  margin:0 auto
+  margin:0 auto;
+  display: flex;
+  padding: 10px;
+  
+  margin-bottom: 20px;
 }
-	.large-header{
-	background:White 100%;
-    text-align:center
-	}
+	
 #x-canvas{
   opacity:0.5
 }
@@ -36,144 +128,8 @@
 
     </style>
 </head>
-<div id="banner" class="banner" style="background-image:url(images/banner/banner1.jpg)">
-    <div class="banner-text">
-      <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-                <div class="banner-heading">
-                  <h1 class="banner-title">About Us</h1>
-                  <nav aria-label="breadcrumb">
-                      <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Who do We Serve</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">About us</li>
-                      </ol>
-                  </nav>
-                </div>
-            </div><!-- Col end -->
-          </div><!-- Row end -->
-      </div><!-- Container end -->
-    </div><!-- Banner text end -->
-  </div><!-- Banner area end --> 
-  <section id="main-container" class="main-container">
-    <div class="container">
-      <div class="row">
-          <div class="col-lg-6">
-            <h3 class="column-title">Who We Are</h3>
-            <p>when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
-            <blockquote><p>Semporibus autem quibusdam et aut officiis debitis aut rerum est aut optio cumque nihil necessitatibus autemn ec tincidunt nunc posuere ut</p></blockquote>
-            <p>He lay on his armour-like  back, and if he lifted. ultrices ultrices sapien, nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing.</p>
-  
-          </div><!-- Col end -->
-  
-          <div class="col-lg-6 mt-5 mt-lg-0">
-            
-            <div id="page-slider" class="page-slider small-bg">
-  
-                <div class="item" style="background-image:url(images/slider-pages/slide-page1.jpg)">
-                  <div class="container">
-                      <div class="box-slider-content">
-                        <div class="box-slider-text">
-                            <h2 class="box-slide-title">Leadership</h2>
-                        </div>    
-                      </div>
-                  </div>
-                </div><!-- Item 1 end -->
-  
-                <div class="item" style="background-image:url(images/slider-pages/slide-page2.jpg)">
-                  <div class="container">
-                      <div class="box-slider-content">
-                        <div class="box-slider-text">
-                            <h2 class="box-slide-title">Relationships</h2>
-                        </div>    
-                      </div>
-                  </div>
-                </div><!-- Item 1 end -->
-  
-                <div class="item" style="background-image:url(images/slider-pages/slide-page3.jpg)">
-                  <div class="container">
-                      <div class="box-slider-content">
-                        <div class="box-slider-text">
-                            <h2 class="box-slide-title">Performance</h2>
-                        </div>    
-                      </div>
-                  </div>
-                </div><!-- Item 1 end -->
-            </div><!-- Page slider end-->          
-          
-  
-          </div><!-- Col end -->
-      </div><!-- Content row end -->
-  
-    </div><!-- Container end -->
-  </section><!-- Main container end -->
-  <section id="ts-features" class="ts-features">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="ts-intro">
-            <h2 class="into-title">About Us</h2>
-            <h3 class="into-sub-title">We deliver landmark projects</h3>
-            <p>We are rethoric question ran over her cheek When she reached the first hills of the Italic Mountains,
-              she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village
-              and the subline of her own road, the Line Lane.</p>
-          </div><!-- Intro box end -->
-  
-          <div class="gap-20"></div>
-  
-          <div class="row">
-            <div class="col-md-6">
-              <div class="ts-service-box">
-                <span class="ts-service-icon">
-                  <i class="fas fa-trophy"></i>
-                </span>
-                <div class="ts-service-box-content">
-                  <h3 class="service-box-title">We've Repution for Excellence</h3>
-                </div>
-              </div><!-- Service 1 end -->
-            </div><!-- col end -->
-  
-            <div class="col-md-6">
-              <div class="ts-service-box">
-                <span class="ts-service-icon">
-                  <i class="fas fa-sliders-h"></i>
-                </span>
-                <div class="ts-service-box-content">
-                  <h3 class="service-box-title">We Build Partnerships</h3>
-                </div>
-              </div><!-- Service 2 end -->
-            </div><!-- col end -->
-          </div><!-- Content row 1 end -->
-  
-          <div class="row">
-            <div class="col-md-6">
-              <div class="ts-service-box">
-                <span class="ts-service-icon">
-                  <i class="fas fa-thumbs-up"></i>
-                </span>
-                <div class="ts-service-box-content">
-                  <h3 class="service-box-title">Guided by Commitment</h3>
-                </div>
-              </div><!-- Service 1 end -->
-            </div><!-- col end -->
-  
-            <div class="col-md-6">
-              <div class="ts-service-box">
-                <span class="ts-service-icon">
-                  <i class="fas fa-users"></i>
-                </span>
-                <div class="ts-service-box-content">
-                  <h3 class="service-box-title">A Team of Professionals</h3>
-                </div>
-              </div><!-- Service 2 end -->
-            </div><!-- col end -->
-          </div><!-- Content row 1 end -->
-        </div><!-- Col end -->
-      </div><!-- Row end -->
-    </div><!-- Container end -->
-  </section><!-- Feature area end -->
-  
+
+    
   <div class="banners">
     <h1>We Have Noticed Our Buyers Personas Carrying Some Common Concern. Allying those Fears.</h1>
   </div>
@@ -182,8 +138,9 @@
   
     <div id="large-header" class="large-header">
         <canvas id="x-canvas"></canvas>
-        <div class="my-text">
-        
+        <div class="myimages-container">
+
+          <div class="my-text">
             <strong><h1>CEOs.</h1></strong>
             <ul class="points-list">
               <strong> <li>Can the software partner be trusted to deliver?</li></strong>
@@ -197,7 +154,59 @@
               Withstanding 3 major economic slumps, we are financially sound to face such challenges in the future. A 100% debt-free financial structure gives us the economic freedom to explore and invest in building capabilities. These in turn help us to stay competitive and at the top of our game. Our engagement models are flexible and are adaptable to the needs of our customers.
               
               We would not have survived this long if we weren’t good at anticipating and keeping up with the rapid pace of change this industry is accustomed to witnessing.</p>
+    
+          </div>
+  
+          <div class="myimage ml-2">
+            <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
+          </div>
+        </div>
+          
+          <div class="myimages-container">
+            <div class="myimage">
+              <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
             </div>
+            <div class="my-text">
+              <strong><h1>CEOs.</h1></strong>
+              <ul class="points-list">
+                <strong> <li>Can the software partner be trusted to deliver?</li></strong>
+                <strong> <li> Will my product reach the market on time?</li></strong>
+                <strong> <li> Will the solutions equip me to differentiate in the market?</li></strong>
+                <strong> <li> Will economic downturns affect my software partner?</li></strong>
+                <strong> <li>What will be my ROI?</li></strong>
+              </ul>
+              <p>A 20+ years old company with 1000+ successful project executions for over 500+ global clients - these numbers are as much a reflection of our ability as they are of our tenacity and steadfastness. We have served numerous clients in their mission-critical projects, and have played our part well in enabling them to emerge as premier companies in their field of work.
+      
+                Withstanding 3 major economic slumps, we are financially sound to face such challenges in the future. A 100% debt-free financial structure gives us the economic freedom to explore and invest in building capabilities. These in turn help us to stay competitive and at the top of our game. Our engagement models are flexible and are adaptable to the needs of our customers.
+                
+                We would not have survived this long if we weren’t good at anticipating and keeping up with the rapid pace of change this industry is accustomed to witnessing.</p>
+                <li><a href="animation.html">test</a></li>
+            </div>
+          </div>
+          <div class="myimages-container">
+  
+            <div class="my-text">
+              <strong><h1>CEOs.</h1></strong>
+              <ul class="points-list">
+                <strong> <li>Can the software partner be trusted to deliver?</li></strong>
+                <strong> <li> Will my product reach the market on time?</li></strong>
+                <strong> <li> Will the solutions equip me to differentiate in the market?</li></strong>
+                <strong> <li> Will economic downturns affect my software partner?</li></strong>
+                <strong> <li>What will be my ROI?</li></strong>
+              </ul>
+              <p>A 20+ years old company with 1000+ successful project executions for over 500+ global clients - these numbers are as much a reflection of our ability as they are of our tenacity and steadfastness. We have served numerous clients in their mission-critical projects, and have played our part well in enabling them to emerge as premier companies in their field of work.
+      
+                Withstanding 3 major economic slumps, we are financially sound to face such challenges in the future. A 100% debt-free financial structure gives us the economic freedom to explore and invest in building capabilities. These in turn help us to stay competitive and at the top of our game. Our engagement models are flexible and are adaptable to the needs of our customers.
+                
+                We would not have survived this long if we weren’t good at anticipating and keeping up with the rapid pace of change this industry is accustomed to witnessing.</p>
+      
+            </div>
+    
+            <div class="myimage ml-5">
+              <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
+            </div>
+          </div>
+      
         
    </div>
    
