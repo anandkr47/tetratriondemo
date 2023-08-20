@@ -108,20 +108,20 @@
 }
 
 /* Large header */
-.large-header{
-	
-  position: relative;
-	}
+
 #x-canvas{
-  opacity:0.5;
-  position: absolute; /* Position the canvas absolutely within .canvas-container */
-    top: 0;
-    left: 0;
-    z-index: 0; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: -1; /* Place the canvas below other content */
   
 }
 </style>
 </head>
+@@include('header.htm')
+@@include('blocks/navigation-1.htm')
+@@include('blocks/page-header.htm', {"title": "About", "prevpage": "company", "currentpage": "About Us"})
 
 <section id="main-container" class="main-container">
   <div class="container">
@@ -250,7 +250,7 @@
 
 
 
-
+<div id="large-header" class="large-header">
       <div class="myimages-container">
       <div class="myimage">
         <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
@@ -342,6 +342,8 @@
             <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
           </div>
         </div>
+        <canvas id="x-canvas"></canvas>
+      </div>
     
 <script>
 // MIT license
@@ -449,28 +451,29 @@
         if(!('ontouchstart' in window)) {
             window.addEventListener('mousemove', mouseMove);
         }
-        window.addEventListener('scroll', scrollCheck);
+      //  window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
     }
 
     function mouseMove(e) {
-        var posx = posy = 0;
-        if (e.pageX || e.pageY) {
-            posx = e.pageX;
-            posy = e.pageY;
-        }
-        else if (e.clientX || e.clientY)    {
-            posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
-            posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
-        }
-        target.x = posx;
-        target.y = posy;
+    var posx, posy;
+
+    if (e.pageX || e.pageY) {
+        posx = e.pageX;
+        posy = e.pageY;
+    } else if (e.clientX || e.clientY) {
+        posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+        posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
     }
 
-    function scrollCheck() {
+    target.x = posx;
+    target.y = posy - (window.pageYOffset || document.documentElement.scrollTop);
+}
+
+    /*function scrollCheck() {
         if(document.body.scrollTop > height) animateHeader = false;
         else animateHeader = true;
-    }
+    }*/
 
     function resize() {
         width = window.innerWidth;
@@ -559,7 +562,6 @@
     }
 
 })();
-
 
 </script>
 
