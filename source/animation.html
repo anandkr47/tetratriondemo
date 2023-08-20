@@ -8,11 +8,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <style>
         /* Your CSS styles */
-        .myimages-container {
-    position: relative; /* Add this line */
-    display: flex;
-    padding: 10px;
-    margin-bottom: 20px; /* Add some margin between containers */
+        html,body{
+  margin:0;
+  overflow:hidden;
+  height:100%
+}
+.myimages-container {
+  display: flex;
+  padding: 10px;
+  
+  margin-bottom: 20px; /* Add some margin between containers */
+  
 }
 
 .myimage {
@@ -105,23 +111,11 @@
 
 }
 
-/* Animation canvas */
-#large-header {
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 50px); /* Subtract the header height */
-    overflow: hidden;
-    margin-bottom: 20px; /* Add some spacing */
+#x-canvas{
+  opacity:0.5
 }
+/* follow me @nodws */
 
-#x-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.5;
-    z-index: -1; /* Move the canvas below the content */
-    pointer-events: none; /* Prevent canvas from blocking interactions */
-}
 
 
 /* Footer styles */
@@ -140,73 +134,104 @@
     @@include('blocks/facts-counter.htm')
   
     <div id="large-header" class="large-header">
-        
-    </div>
-  
-    <div class="myimages-container">
-        <div class="my-text">
-            <!-- Your content --><strong><h1>CEOs.</h1></strong>
-        <ul class="points-list">
-          <strong> <li>Can the software partner be trusted to deliver?</li></strong>
-          <strong> <li> Will my product reach the market on time?</li></strong>
-          <strong> <li> Will the solutions equip me to differentiate in the market?</li></strong>
-          <strong> <li> Will economic downturns affect my software partner?</li></strong>
-          <strong> <li>What will be my ROI?</li></strong>
-        </ul>
-        <p>A 20+ years old company with 1000+ successful project executions for over 500+ global clients - these numbers are as much a reflection of our ability as they are of our tenacity and steadfastness. We have served numerous clients in their mission-critical projects, and have played our part well in enabling them to emerge as premier companies in their field of work.
-
-          Withstanding 3 major economic slumps, we are financially sound to face such challenges in the future. A 100% debt-free financial structure gives us the economic freedom to explore and invest in building capabilities. These in turn help us to stay competitive and at the top of our game. Our engagement models are flexible and are adaptable to the needs of our customers.
-          
-          We would not have survived this long if we weren’t good at anticipating and keeping up with the rapid pace of change this industry is accustomed to witnessing.</p>
-        </div>
-        <div class="myimage ml-2">
+      <div class="about-container">
+        <div class="myimages-container">
+          <div class="myimage">
             <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
-        </div>
-    </div>
-    <canvas id="x-canvas"></canvas>
-    <div class="myimages-container">
-        <div class="myimage">
-            <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
-        </div>
-        <div class="my-text">
-            <!-- Your content -->
+          </div>
+          <div class="my-text">
+            
             <strong><h1>CEOs.</h1></strong>
-        <ul class="points-list">
-          <strong> <li>Can the software partner be trusted to deliver?</li></strong>
-          <strong> <li> Will my product reach the market on time?</li></strong>
-          <strong> <li> Will the solutions equip me to differentiate in the market?</li></strong>
-          <strong> <li> Will economic downturns affect my software partner?</li></strong>
-          <strong> <li>What will be my ROI?</li></strong>
-        </ul>
-        <p>A 20+ years old company with 1000+ successful project executions for over 500+ global clients - these numbers are as much a reflection of our ability as they are of our tenacity and steadfastness. We have served numerous clients in their mission-critical projects, and have played our part well in enabling them to emerge as premier companies in their field of work.
-
-          Withstanding 3 major economic slumps, we are financially sound to face such challenges in the future. A 100% debt-free financial structure gives us the economic freedom to explore and invest in building capabilities. These in turn help us to stay competitive and at the top of our game. Our engagement models are flexible and are adaptable to the needs of our customers.
-          
-          We would not have survived this long if we weren’t good at anticipating and keeping up with the rapid pace of change this industry is accustomed to witnessing.</p>
-        </div>
-    </div>
+            <ul class="points-list">
+              <strong> <li>Can the software partner be trusted to deliver?</li></strong>
+              <strong> <li> Will my product reach the market on time?</li></strong>
+              <strong> <li> Will the solutions equip me to differentiate in the market?</li></strong>
+              <strong> <li> Will economic downturns affect my software partner?</li></strong>
+              <strong> <li>What will be my ROI?</li></strong>
+            </ul>
+            <p>A 20+ years old company with 1000+ successful project executions for over 500+ global clients - these numbers are as much a reflection of our ability as they are of our tenacity and steadfastness. We have served numerous clients in their mission-critical projects, and have played our part well in enabling them to emerge as premier companies in their field of work.
     
-    <div class="myimages-container">
-        <div class="my-text">
-            <!-- Your content -->
-            <strong><h1>CEOs.</h1></strong>
-        <ul class="points-list">
-          <strong> <li>Can the software partner be trusted to deliver?</li></strong>
-          <strong> <li> Will my product reach the market on time?</li></strong>
-          <strong> <li> Will the solutions equip me to differentiate in the market?</li></strong>
-          <strong> <li> Will economic downturns affect my software partner?</li></strong>
-          <strong> <li>What will be my ROI?</li></strong>
-        </ul>
-        <p>A 20+ years old company with 1000+ successful project executions for over 500+ global clients - these numbers are as much a reflection of our ability as they are of our tenacity and steadfastness. We have served numerous clients in their mission-critical projects, and have played our part well in enabling them to emerge as premier companies in their field of work.
+              Withstanding 3 major economic slumps, we are financially sound to face such challenges in the future. A 100% debt-free financial structure gives us the economic freedom to explore and invest in building capabilities. These in turn help us to stay competitive and at the top of our game. Our engagement models are flexible and are adaptable to the needs of our customers.
+              
+              We would not have survived this long if we weren’t good at anticipating and keeping up with the rapid pace of change this industry is accustomed to witnessing.</p>
+            </div>
+          </div>
+        </div>
+    
+          <div class="myimages-container">
+    
+            <div class="my-text">
+              <strong><h1>CEOs.</h1></strong>
+              <ul class="points-list">
+                <strong> <li>Can the software partner be trusted to deliver?</li></strong>
+                <strong> <li> Will my product reach the market on time?</li></strong>
+                <strong> <li> Will the solutions equip me to differentiate in the market?</li></strong>
+                <strong> <li> Will economic downturns affect my software partner?</li></strong>
+                <strong> <li>What will be my ROI?</li></strong>
+              </ul>
+              <p>A 20+ years old company with 1000+ successful project executions for over 500+ global clients - these numbers are as much a reflection of our ability as they are of our tenacity and steadfastness. We have served numerous clients in their mission-critical projects, and have played our part well in enabling them to emerge as premier companies in their field of work.
+      
+                Withstanding 3 major economic slumps, we are financially sound to face such challenges in the future. A 100% debt-free financial structure gives us the economic freedom to explore and invest in building capabilities. These in turn help us to stay competitive and at the top of our game. Our engagement models are flexible and are adaptable to the needs of our customers.
+                
+                We would not have survived this long if we weren’t good at anticipating and keeping up with the rapid pace of change this industry is accustomed to witnessing.</p>
+      
+            </div>
+    
+            <div class="myimage ml-2">
+              <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
+            </div>
+          </div>
+            
+            <div class="myimages-container">
+              <div class="myimage">
+                <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
+              </div>
+              <div class="my-text">
+                <strong><h1>CEOs.</h1></strong>
+                <ul class="points-list">
+                  <strong> <li>Can the software partner be trusted to deliver?</li></strong>
+                  <strong> <li> Will my product reach the market on time?</li></strong>
+                  <strong> <li> Will the solutions equip me to differentiate in the market?</li></strong>
+                  <strong> <li> Will economic downturns affect my software partner?</li></strong>
+                  <strong> <li>What will be my ROI?</li></strong>
+                </ul>
+                <p>A 20+ years old company with 1000+ successful project executions for over 500+ global clients - these numbers are as much a reflection of our ability as they are of our tenacity and steadfastness. We have served numerous clients in their mission-critical projects, and have played our part well in enabling them to emerge as premier companies in their field of work.
+        
+                  Withstanding 3 major economic slumps, we are financially sound to face such challenges in the future. A 100% debt-free financial structure gives us the economic freedom to explore and invest in building capabilities. These in turn help us to stay competitive and at the top of our game. Our engagement models are flexible and are adaptable to the needs of our customers.
+                  
+                  We would not have survived this long if we weren’t good at anticipating and keeping up with the rapid pace of change this industry is accustomed to witnessing.</p>
+                  <li><a href="animation.html">test</a></li>
+              </div>
+            </div>
+            <div class="myimages-container">
+    
+              <div class="my-text">
+                <strong><h1>CEOs.</h1></strong>
+                <ul class="points-list">
+                  <strong> <li>Can the software partner be trusted to deliver?</li></strong>
+                  <strong> <li> Will my product reach the market on time?</li></strong>
+                  <strong> <li> Will the solutions equip me to differentiate in the market?</li></strong>
+                  <strong> <li> Will economic downturns affect my software partner?</li></strong>
+                  <strong> <li>What will be my ROI?</li></strong>
+                </ul>
+                <p>A 20+ years old company with 1000+ successful project executions for over 500+ global clients - these numbers are as much a reflection of our ability as they are of our tenacity and steadfastness. We have served numerous clients in their mission-critical projects, and have played our part well in enabling them to emerge as premier companies in their field of work.
+        
+                  Withstanding 3 major economic slumps, we are financially sound to face such challenges in the future. A 100% debt-free financial structure gives us the economic freedom to explore and invest in building capabilities. These in turn help us to stay competitive and at the top of our game. Our engagement models are flexible and are adaptable to the needs of our customers.
+                  
+                  We would not have survived this long if we weren’t good at anticipating and keeping up with the rapid pace of change this industry is accustomed to witnessing.</p>
+        
+              </div>
+      
+              <div class="myimage ml-5">
+                <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
+              </div>
+            </div>
+    
+      </div>
 
-          Withstanding 3 major economic slumps, we are financially sound to face such challenges in the future. A 100% debt-free financial structure gives us the economic freedom to explore and invest in building capabilities. These in turn help us to stay competitive and at the top of our game. Our engagement models are flexible and are adaptable to the needs of our customers.
-          
-          We would not have survived this long if we weren’t good at anticipating and keeping up with the rapid pace of change this industry is accustomed to witnessing.</p>
-        </div>
-        <div class="myimage ml-5">
-            <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
-        </div>
-    </div>
+           <canvas id="x-canvas"></canvas>
+ </div>
+ 
     
     <script>
         // Your animation script
