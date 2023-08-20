@@ -1,43 +1,59 @@
 @@include('header.htm')
 @@include('blocks/navigation-1.htm')
 <style>
-
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
-
-.typewrite {
+  @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
   
-  text-align: center;
-  color:black;
-  padding-top:5em;
-  font-size: 2em;
-}
-
-.typing-container {
-  background-image: url("images/bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 2em;
-  text-align: center;
-  padding-top: 5em;
-  margin-bottom: 0;
-  height: 100vh;
-  align-items: center;
-}
-
-#top{
-  font-size: 2.5em;
-  color: rgb(6, 145, 114);
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;
+  .typewrite {
+    text-align: center;
+    color: black;
+    padding-top: 3em;
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
   
-  margin-bottom: 60px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-</style>
+  .typing-container {
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+    text-align: center;
+    padding-top: 3em; /* Adjust padding for smaller screens */
+    margin-bottom: 0;
+    height: 100vh;
+    align-items: center;
+  }
+  
+  #top {
+    font-size: 2em; /* Adjust font size for smaller screens */
+    color: rgb(6, 145, 114);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 40px; /* Adjust margin for smaller screens */
+    margin-left: 10px; /* Adjust margin for smaller screens */
+    margin-right: 10px; /* Adjust margin for smaller screens */
+  }
+  
+  /* Media Query for smaller screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    .typewrite {
+      font-size: 1.2em;
+    }
+  
+    .typing-container {
+      font-size: 1.2em;
+      padding-top: 2em;
+    }
+  
+    #top {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  </style>
+  
   
 <div class="typing-container">
   <h2 id="top">Tetratrion</h2>
