@@ -10,6 +10,8 @@
   
   box-shadow: 0 0 10px rgb(127, 128, 128);
   border-radius: 2%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .myimage {
@@ -47,6 +49,12 @@
 .my-text p {
   font-size: 16px;
   line-height: 1.5;
+}
+.myimage-marginright {
+  margin-right: 30%;
+}
+.myimage-marginleft{
+  margin-left: 10%;
 }
 
 /* Mobile Responsive */
@@ -89,6 +97,8 @@
   background-color: #049c69; /* Green background color */
   text-align: center; /* Center-align the text */
   height: 50px;
+  border-radius: 2%;
+  box-shadow: 1px 1px 5px rgb(127, 128, 128);
 }
 
 .banners h1 {
@@ -114,6 +124,7 @@
   left: 0;
   opacity: 0.8;
   z-index: -1; /* Place the canvas below other content */
+  
   
 }
 </style>
@@ -244,10 +255,6 @@
   <h1>We Have Noticed Our Buyers Personas Carrying Some Common Concern. Allying those Fears.</h1>
 </div>
 
-@@include('blocks/facts-counter.htm')
-
-
-
 
 
   
@@ -260,7 +267,7 @@
       </div>
       <canvas id="x-canvas"></canvas>
         </div>
-      <div class="my-text">
+      <div class="my-text myimage-marginleft">
         
         <strong><h1>CEOs.</h1></strong>
         <ul class="points-list">
@@ -298,7 +305,7 @@
   
         </div>
 
-        <div class="myimage">
+        <div class="myimage myimage-marginleft">
           <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
         </div>
       </div>
@@ -326,7 +333,7 @@
         </div>
         <div class="myimages-container">
 
-          <div class="my-text">
+          <div class="my-text ">
             <strong><h1>CEOs.</h1></strong>
             <ul class="points-list">
               <strong> <li>Can the software partner be trusted to deliver?</li></strong>
@@ -343,7 +350,7 @@
     
           </div>
   
-          <div class="myimage">
+          <div class="myimage myimage-marginleft">
             <img class="mypicture" src="https://i.pinimg.com/564x/48/bf/c9/48bfc9ae0a10418849a3f50d57c08897.jpg" alt="img1">
           </div>
         </div>
