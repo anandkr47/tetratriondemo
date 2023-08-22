@@ -1,0 +1,257 @@
+
+<head>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+   
+  .service-container {
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .container_contain {
+    display: flex;
+  
+    height: 550px;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(180deg, #e6facd 0, #c5e09c 100%);
+  }
+  .text_info {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+  }
+  .text_contain {
+    flex-basis: 60%;
+    position: relative;
+    left: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-sizing: border-box;
+  
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .text_contain h1 {
+    color: #049c69;
+    font-size: 25px;
+    margin: 5px 3px 5px 5px;
+    padding: 8px;
+  }
+  .text_contain h2 {
+    color: #049c69;
+    font-size: 4rem;
+    margin: 5px 3px 5px 5px;
+    padding: 8px;
+    font-weight: bolder;
+  }
+  .text_contain span {
+    font-size: 18px;
+    margin: 5px 5px 5px 5px;
+    padding: 8px;
+    line-height: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .small_text {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.5rem;
+  }
+  .image_contain {
+    flex-basis: 40%;
+  }
+  .image_contain img {
+    width: 100%;
+    height: 100%;
+  }
+  .section1 {
+    position: relative;
+    /* left: 53.2px; */
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 53.2px;
+    padding-right: 52.8px;
+  }
+  .section1 h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: "Inter";
+    font-weight: 800;
+    color: #049c69;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .cotainer_info {
+    display: flex;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+    margin-top: 30px;
+  }
+  .info {
+    flex-basis: 50%;
+    margin-top: 30px;
+  }
+  .info ul {
+    margin: 30px;
+    padding: 10px;
+  }
+  .info ul li {
+    padding: 5px 5px;
+    color: #3a3d41;
+    font-size: 15px;
+    line-height: 1.5rem;
+    font-weight: bold;
+  }
+  .image {
+    flex-basis: 50%;
+  }
+  .image img {
+    width: 80%;
+    height: 100%;
+  }
+  .section2 {
+    height: 60px;
+    background-color: #049c69;
+  }
+  .section2 h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 10px;
+    position: relative;
+    top: 20px;
+  
+    color: white;
+  }
+  .icons-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation: floatAnimation 5s ease-in-out infinite;
+    }
+
+    .icon-box {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: floatAnimation 5s ease-in-out infinite alternate;
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    .icon-title {
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    @keyframes floatAnimation {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  @media (max-width: 800px) {
+    .tech_info {
+      justify-content: center;
+    }
+    .cotainer_info {
+      flex-direction: column;
+      margin: 0;
+    }
+    .container_contain {
+      flex-direction: column;
+      height: auto;
+    }
+  }
+  @media (max-width: 650px) {
+    .tech_info {
+      justify-content: center;
+    }
+    .cotainer_info {
+      flex-direction: column;
+      margin: 0;
+    }
+    .container_contain {
+      flex-direction: column;
+      height: auto;
+    }
+    .tech_container h1 {
+      font-size: 30px;
+    }
+  }
+  @media screen and(width:450px) {
+  }
+  @media screen and(width:350px) {
+  }
+  
+    </style>
+  </head>
+  
+  @@include('header.htm')
+  @@include('blocks/navigation-1.htm')
+  @@include('blocks/page-header.htm', {"title": "Python", "prevpage": "Services", "currentpage": "Python"})
+  
+    <div class="service-container">
+      <div class="container_contain">
+        <div class="text_info">
+          <div class="text_contain">
+            <h1>PYTHON DEVELOPMENT COMPANY</h1>
+            <h2>Python</h2>
+            <span
+              >Derive benefits similar to the ones that many world-class
+              companies do from using Python. Using the Django framework, our
+              Python experts can build a wide spectrum of feature-rich and
+              enterprise-grade applications.</span
+            >
+            <br /><br />
+            <div class="small_text">
+              Python has enabled our team of experts to meet highly specific and
+              demanding web application needs of customers from various
+              industries.
+            </div>
+          </div>
+        </div>
+        <div class="image_contain">
+          <img src="images/undraw_personal_finance_tqcd.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="icons-container">
+        <div class="icon-box">
+          <img src="images/lang-icon/python.png" alt="Company 1" class="icon">
+          <div class="icon-title">Company 1</div>
+        </div>
+        <div class="icon-box">
+          <img src="images/lang-icon/php.png" alt="Company 2" class="icon">
+          <div class="icon-title">Company 2</div>
+        </div>
+        <!-- Repeat similar blocks for the remaining icons -->
+      </div>
+    @@include('footer.htm')
+  
