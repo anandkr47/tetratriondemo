@@ -1,0 +1,448 @@
+<head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  
+  <style>
+   
+   .myimages-container {
+    display: flex;
+    padding: 10px;
+    
+    box-shadow: 0 0 10px rgb(127, 128, 128);
+    border-radius: 2%;
+    
+  }
+  
+  .myimage {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+  }
+  
+  .myimage .mypicture {
+    max-width: 100%;
+    height: 90%;
+    display: block;
+    
+    height: 600px;
+    border-radius: 2%;
+    box-shadow: 0 0 5px rgb(127, 128, 128);
+  }
+  
+  .my-text {
+    flex: 2;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .my-text h1 {
+    margin-bottom: 10px;
+    line-height: 2;
+    font-weight: 900;
+    font-size: 36px; /* Increase the font size to make it bigger */
+    color: #049c69;
+    border-radius: 10px; /* Add border-radius for round corners */
+    padding: 10px 20px; /* Add some padding for extra roundy appearance */
+    display: inline-block; /* This will make the background rounded to the text */
+  }
+  
+  
+  .my-text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .myimage-marginright {
+    margin-right: 30%;
+  }
+  .myimage-marginleft{
+    margin-left: 15%;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .myimages-container {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 10px; /* Reduce margin between containers */
+    }
+  
+    .myimage {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .myimage.ml-2 {
+      margin-left: 0; /* Remove left margin for the last image */
+    }
+  
+    .my-text {
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+   
+    h2 {
+      margin-top: 0;
+    }
+    #ts-features {
+    padding: 10px 0; /* Add vertical padding to center the content */
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  .ts-intro {
+    max-width: 800px; /* Set a max width for the content */
+    margin: 0 auto; /* Center the content horizontally */
+  }
+  .banners {
+    background-color: #049c69; /* Green background color */
+    text-align: center; /* Center-align the text */
+    height: 100px;
+    border-radius: 2%;
+    box-shadow: 1px 1px 5px rgb(127, 128, 128);
+  }
+  
+  .banners h1 {
+    color: #fff; /* White text color */
+    font-size: 15px; /* Adjust font size as needed */
+   
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflowing text */
+    margin-top: 5px;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .banners h1 {
+      font-size: 25px; /* Increase font size for desktop mode */
+    }
+  
+  }
+  
+  /* Large header */
+  
+  #x-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: -1; /* Place the canvas below other content */
+    
+    
+  }
+  </style>
+  </head>
+  @@include('header.htm')
+  @@include('blocks/navigation-1.htm')
+  @@include('blocks/page-header.htm', {"title": "About", "prevpage": "company", "currentpage": "About Us"})
+  
+  <section id="main-container" class="main-container">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-6">
+            <h3 class="column-title">Python</h3>
+            <p>when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+            <blockquote><p>Semporibus autem quibusdam et aut officiis debitis aut rerum est aut optio cumque nihil necessitatibus autemn ec tincidunt nunc posuere ut</p></blockquote>
+            <p>He lay on his armour-like  back, and if he lifted. ultrices ultrices sapien, nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing.</p>
+  
+          </div><!-- Col end -->
+  
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            
+            <div id="page-slider" class="page-slider small-bg">
+  
+                <div class="item" style="background-image:url(images/slider-pages/slide-page1.jpg)">
+                  <div class="container">
+                      <div class="box-slider-content">
+                        <div class="box-slider-text">
+                            <h2 class="box-slide-title">Application Development<h2>
+                        </div>    
+                      </div>
+                  </div>
+                </div><!-- Item 1 end -->
+  
+                <div class="item" style="background-image:url(images/slider-pages/slide-page2.jpg)">
+                  <div class="container">
+                      <div class="box-slider-content">
+                        <div class="box-slider-text">
+                            <h2 class="box-slide-title">Web Development</h2>
+                        </div>    
+                      </div>
+                  </div>
+                </div><!-- Item 1 end -->
+  
+                <div class="item" style="background-image:url(images/slider-pages/slide-page3.jpg)">
+                  <div class="container">
+                      <div class="box-slider-content">
+                        <div class="box-slider-text">
+                            <h2 class="box-slide-title">Machine Learning</h2>
+                        </div>    
+                      </div>
+                  </div>
+                </div><!-- Item 1 end -->
+            </div><!-- Page slider end-->          
+          
+  
+          </div><!-- Col end -->
+      </div><!-- Content row end -->
+  
+    </div><!-- Container end -->
+  
+  
+  
+  
+    
+  
+        <div class="myimages-container">
+          <div id="large-header" class="large-header">
+        <div class="myimage">
+  
+          <img class="mypicture" src="https://cdn.activestate.com/wp-content/uploads/2021/12/python-coding-mistakes.jpg" alt="img1">
+        </div>
+        <canvas id="x-canvas"></canvas>
+          </div>
+        <div class="my-text myimage-marginleft">
+          
+          <strong><h1>Our Solutions.</h1></strong>
+          <ul class="points-list">
+            <strong> <li>Can the software partner be trusted to deliver?</li></strong>
+            <strong> <li> Will my product reach the market on time?</li></strong>
+            <strong> <li> Will the solutions equip me to differentiate in the market?</li></strong>
+            <strong> <li> Will economic downturns affect my software partner?</li></strong>
+            <strong> <li>What will be my ROI?</li></strong>
+          </ul>
+          <p>A 20+ years old company with 1000+ successful project executions for over 500+ global clients - these numbers are as much a reflection of our ability as they are of our tenacity and steadfastness. We have served numerous clients in their mission-critical projects, and have played our part well in enabling them to emerge as premier companies in their field of work.
+  
+            Withstanding 3 major economic slumps, we are financially sound to face such challenges in the future. A 100% debt-free financial structure gives us the economic freedom to explore and invest in building capabilities. These in turn help us to stay competitive and at the top of our game. Our engagement models are flexible and are adaptable to the needs of our customers.
+            
+            We would not have survived this long if we weren’t good at anticipating and keeping up with the rapid pace of change this industry is accustomed to witnessing.</p>
+          </div>
+        </div>
+      
+
+       
+  <script>
+  // MIT license
+  // By @nodws with github.com/greensock/GreenSock-JS, see more examples at greensock.com/examples-showcases
+  (function() {
+          var lastTime = 0;
+          var vendors = ['ms', 'moz', 'webkit', 'o'];
+          for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+              window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+              window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame']
+                  || window[vendors[x]+'CancelRequestAnimationFrame'];
+          }
+  
+          if (!window.requestAnimationFrame)
+              window.requestAnimationFrame = function(callback, element) {
+                  var currTime = new Date().getTime();
+                  var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                  var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+                      timeToCall);
+                  lastTime = currTime + timeToCall;
+                  return id;
+              };
+  
+          if (!window.cancelAnimationFrame)
+              window.cancelAnimationFrame = function(id) {
+                  clearTimeout(id);
+              };
+      }());
+  
+  
+      (function() {
+  
+      var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
+  
+      // Main
+      initHeader();
+      initAnimation();
+      addListeners();
+  
+      function initHeader() {
+          width = window.innerWidth;
+          height = window.innerHeight;
+          target = {x: width/2, y: height/2};
+  
+          largeHeader = document.getElementById('large-header');
+   
+        largeHeader.style.height = height/0 +'px';
+        largeHeader.style.width = width/0 +'px';
+          canvas = document.getElementById('x-canvas');
+          canvas.width = width;
+          canvas.height = height;
+          ctx = canvas.getContext('2d');
+  
+          // create points
+          points = [];
+          var puntitos=20;
+          for(var x = 0; x < width; x = x + width/puntitos) {
+              for(var y = 0; y < height; y = y + height/puntitos) {
+                  var px = x + Math.random()*width/puntitos;
+                  var py = y + Math.random()*height/puntitos;
+                  var p = {x: px, originX: px, y: py, originY: py };
+                  points.push(p);
+              }
+          }
+  
+          // for each point find the 5 closest points
+          for(var i = 0; i < points.length; i++) {
+              var closest = [];
+              var p1 = points[i];
+              for(var j = 0; j < points.length; j++) {
+                  var p2 = points[j]
+                  if(!(p1 == p2)) {
+                      var placed = false;
+                      for(var k = 0; k < 5; k++) {
+                          if(!placed) {
+                              if(closest[k] == undefined) {
+                                  closest[k] = p2;
+                                  placed = true;
+                              }
+                          }
+                      }
+  
+                      for(var k = 0; k < 5; k++) {
+                          if(!placed) {
+                              if(getDistance(p1, p2) < getDistance(p1, closest[k])) {
+                                  closest[k] = p2;
+                                  placed = true;
+                              }
+                          }
+                      }
+                  }
+              }
+              p1.closest = closest;
+          }
+  
+          // assign a circle to each point
+          for(var i in points) {
+              var c = new Circle(points[i], 2+Math.random()*5, 'rgba(0,102,51)');
+              points[i].circle = c;
+          }
+      }
+  
+      // Event handling
+      function addListeners() {
+          if(!('ontouchstart' in window)) {
+              window.addEventListener('mousemove', mouseMove);
+          }
+        //  window.addEventListener('scroll', scrollCheck);
+          window.addEventListener('resize', resize);
+      }
+  
+      function mouseMove(e) {
+      var posx, posy;
+  
+      if (e.pageX || e.pageY) {
+          posx = e.pageX;
+          posy = e.pageY;
+      } else if (e.clientX || e.clientY) {
+          posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+          posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+      }
+  
+      target.x = posx;
+      target.y = posy - (window.pageYOffset || document.documentElement.scrollTop);
+  }
+  
+      /*function scrollCheck() {
+          if(document.body.scrollTop > height) animateHeader = false;
+          else animateHeader = true;
+      }*/
+  
+      function resize() {
+          width = window.innerWidth;
+          height = window.innerHeight;
+          largeHeader.style.height = height+'px';
+          canvas.width = width;
+          canvas.height = height;
+      }
+  
+      // animation
+      function initAnimation() {
+          animate();
+          for(var i in points) {
+              shiftPoint(points[i]);
+          }
+      }
+  
+      function animate() {
+          if(animateHeader) {
+              ctx.clearRect(0,0,width,height);
+              for(var i in points) {
+                  // detect points in range
+                  if(Math.abs(getDistance(target, points[i])) < 4000) {
+                      points[i].active = 0.3;
+                      points[i].circle.active = 0.6;
+                  } else if(Math.abs(getDistance(target, points[i])) < 20000) {
+                      points[i].active = 0.1;
+                      points[i].circle.active = 0.3;
+                  } else if(Math.abs(getDistance(target, points[i])) < 40000) {
+                      points[i].active = 0.02;
+                      points[i].circle.active = 0.1;
+                  } else {
+                      points[i].active = 0;
+                      points[i].circle.active = 0;
+                  }
+  
+                  drawLines(points[i]);
+                  points[i].circle.draw();
+              }
+          }
+          requestAnimationFrame(animate);
+      }
+  
+      function shiftPoint(p) {
+          TweenLite.to(p, 1+1*Math.random(), {x:p.originX-50+Math.random()*50,
+              y: p.originY-50+Math.random()*50, ease:Circ.easeInOut,
+              onComplete: function() {
+                  shiftPoint(p);
+              }});
+      }
+  
+      // Canvas manipulation
+      function drawLines(p) {
+          if(!p.active) return;
+          for(var i in p.closest) {
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(p.closest[i].x, p.closest[i].y);
+              ctx.strokeStyle = 'rgba(0,102,51,'+ p.active+')';
+              ctx.stroke();
+          }
+      }
+  
+      function Circle(pos,rad,color) {
+          var _this = this;
+  
+          // constructor
+          (function() {
+              _this.pos = pos || null;
+              _this.radius = rad || null;
+              _this.color = color || null;
+          })();
+  
+          this.draw = function() {
+              if(!_this.active) return;
+              ctx.beginPath();
+              ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
+              ctx.fillStyle = 'rgba(0,102,51,'+ _this.active+')';
+              ctx.fill();
+          };
+      }
+  
+      // Util
+      function getDistance(p1, p2) {
+          return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
+      }
+  
+  })();
+  
+  </script>
+  
+  
+  @@include('footer.htm')
