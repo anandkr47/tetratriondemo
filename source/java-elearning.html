@@ -1,0 +1,61 @@
+@@include('header.htm')
+@@include('blocks/navigation-1.htm')
+@@include('blocks/page-header.htm', {"title": "Project", "prevpage": "Project", "currentpage": "Patients Review System"})
+
+<section id="main-container" class="main-container">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-8">
+        <h1>JAVA - BLACKBOX</h1>
+        <br></br>
+        <h2>Executive Summary</h2>
+        <Br></Br>
+        <p>Blackbox is a GUI based desktop application developed in java and designed to run on both windows as well as Linux platform. Java Swing API is used to provide a nice user interface. This application is unique in the way it handles mp3 files. Unique, because java provides minimal functionality for splitting sound files and natively does not supports mp3. Blackbox mainly consists of two modules i.e. segmentation module and customer management module.
+
+            The segmentation module is responsible for splitting a large mp3 file into smaller clips based on silence as a separator between the clips. It then matches each clip to a unique text line from a text file and names the clip as per the text line and stores the clip as an individual mp3 file in the physical file system.
+            
+            It also makes database entry for each clip with details such as storage location, base mp3 file etc. The duration of silence & destination to store mp3 files is specified by the user in a configuration file. And base mp3 file and text files are browsed by the user through the UI. The user can also manage the mp3 files so processed, like he can play an mp3 file or delete it. An mp3 file is played through java Sound API.
+            
+            The customer management module is where the administrator can create new customer and manage existing customers. When a new customer is created an introductory e-mail will be sent by the application to the customer, the message will consist of all the customer’s needs to access the service i.e the credentials. For sending mail the application uses java Mail API. Blackbox uses Apache log4j for logging various activities by the user into a log file.
+            
+            The application is designed in such a way that it can be easily extended to support other audio formats like wav, au etc. The application is also designed to support other languages like French, German etc. The a
+            
+            </p>
+      </div><!-- Slider col end -->
+
+      <div class="col-lg-4 mt-5 mt-lg-0">
+
+        
+
+        <ul class="project-info list-unstyled">
+          <li>
+            <h2 class="project-info">Client</h2>
+            <p class="project-info">E-learning Comapny</p>
+          </li>
+          <br></br>
+          <li>
+            <h2 class="project-info">Industries</h2>
+            <p class="project-info">E-learning</p>
+          </li>
+          <br></br>
+          <li>
+           <h2 class="project-info">Technologies</h2>
+            <p class="project-info">Java</p>
+          </li>
+            <br></br>
+          <li>
+            <p class="project-link">
+              <a class="btn btn-primary" target="_blank" href="#">View Project</a>
+            </p>
+          </li>
+        </ul>
+
+      </div><!-- Content col end -->
+
+    </div><!-- Row end -->
+
+  </div><!-- Conatiner end -->
+</section><!-- Main container end -->
+
+@@include('footer.htm')

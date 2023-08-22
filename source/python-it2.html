@@ -1,0 +1,62 @@
+@@include('header.htm')
+@@include('blocks/navigation-1.htm')
+@@include('blocks/page-header.htm', {"title": "Project", "prevpage": "Project", "currentpage": "Patients Review System"})
+
+<section id="main-container" class="main-container">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-8">
+        <h1>SMS INQUIRY AND REPORTING SYSTEM</h1>
+        <br></br>
+        <h2>Executive Summary</h2>
+        <Br></Br>
+        <p>Designed and developed an SMS inquiry and reporting system which uses Twilio SMS API for receiving and sending
+             SMS and Twisted server for handling request and response. 
+            The customers can send SMS with some keywords and based of it response message is send back to the customer.
+
+            Implemented Twilio validation to verify that the request is coming from Twilio and is a valid request.
+             Implement HTTP Digest authentication using Twisted Auth module to add extra layer of security so that only 
+             valid users can connect to the server.
+            
+            We have also created a Django app for showing SMS reports i.e. Total number of SMS received last day, last week, 
+            last month, SMS reports by keywords etc.
+            
+            </p>
+      </div><!-- Slider col end -->
+
+      <div class="col-lg-4 mt-5 mt-lg-0">
+
+        
+
+        <ul class="project-info list-unstyled">
+          <li>
+            <h2 class="project-info">Client</h2>
+            <p class="project-info">IT Company</p>
+          </li>
+          <br></br>
+          <li>
+            <h2 class="project-info">Industries</h2>
+            <p class="project-info">IT</p>
+          </li>
+          <br></br>
+          <li>
+           <h2 class="project-info">Technologies</h2>
+            <p class="project-info">Python</p>
+          </li>
+            <br></br>
+          <li>
+            <p class="project-link">
+              <a class="btn btn-primary" target="_blank" href="#">View Project</a>
+            </p>
+          </li>
+        </ul>
+
+      </div><!-- Content col end -->
+
+    </div><!-- Row end -->
+
+  </div><!-- Conatiner end -->
+</section><!-- Main container end -->
+
+@@include('footer.htm')
