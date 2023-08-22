@@ -1,0 +1,79 @@
+
+<head>
+  
+  <style>
+.section1 h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-family: "Inter";
+  font-weight: 800;
+  color: #049c69;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+    .icons-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation: floatAnimation 5s ease-in-out infinite;
+    }
+
+    .icon-box {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: floatAnimation 5s ease-in-out infinite alternate;
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    .icon-title {
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    @keyframes floatAnimation {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+@@include('header.htm')
+@@include('blocks/navigation-1.htm')
+@@include('blocks/page-header.htm', {"title": "About", "prevpage": "company", "currentpage": "About Us"})
+<div class="section1">
+    <h1>Our Clients</h1>
+</div>
+  <div class="icons-container">
+    <div class="icon-box">
+      <img src="icon1.png" alt="Company 1" class="icon">
+      <div class="icon-title">Company 1</div>
+    </div>
+    <div class="icon-box">
+      <img src="icon2.png" alt="Company 2" class="icon">
+      <div class="icon-title">Company 2</div>
+    </div>
+    <!-- Repeat similar blocks for the remaining icons -->
+  </div>
+
+  @@include('footer.htm')
