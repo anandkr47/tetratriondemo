@@ -1,0 +1,58 @@
+@@include('header.htm')
+@@include('blocks/navigation-1.htm')
+@@include('blocks/page-header.htm', {"title": "Project", "prevpage": "Project", "currentpage": "Projects Single"})
+
+<section id="main-container" class="main-container">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-8">
+        <h1>PATIENT REVIEW SYSTEM</h1>
+        <br></br>
+        <h2>Executive Summary</h2>
+        <Br></Br>
+        <p>Designed and implemented a Django based web application to allow patients to search for doctors/hospitals,
+           rate and add reviews for them. The application implements radius-based search where visitors/patients can 
+           enter their preferred location to determine nearby doctors/hospitals based on doctor/clinic addresses in
+            the PostgreSQL DB using geo locations. The application can also detect a user’s location and pre-fill the 
+            location box for user. The user can then search the doctors/hospitals based on distance specified from his 
+            location, as well as select a filter on specialties and procedures which are served by doctors/hospitals.
+             The application also remembers the users’ last location searched to make it easier for the user to further 
+             search from where they left off on their next visit to the page. User can sort the search results based on
+              procedures and their prices (categorized in insurance price and cash price), highest rated doctors,
+               most rated doctors, distance from user’s location.</p>
+      </div><!-- Slider col end -->
+
+      <div class="col-lg-4 mt-5 mt-lg-0">
+
+        
+
+        <ul class="project-info list-unstyled">
+          <li>
+            <strong><h1 class="project-info-label" style="font-size: larger;">Client</h1></strong>
+            <p class="project-info-content">Pransbay Powers Authority</p>
+          </li>
+          
+          <li>
+            <strong><h1 class="project-info-label">Industries</h1></strong>
+            <p class="project-info-content">Healthcare</p>
+          </li>
+          <li>
+           <strong> <h1 class="project-info-label">Technologies</h1></strong>
+            <p class="project-info-content">Python</p>
+          </li>
+          <li>
+            <p class="project-link">
+              <a class="btn btn-primary" target="_blank" href="#">View Project</a>
+            </p>
+          </li>
+        </ul>
+
+      </div><!-- Content col end -->
+
+    </div><!-- Row end -->
+
+  </div><!-- Conatiner end -->
+</section><!-- Main container end -->
+
+@@include('footer.htm')
