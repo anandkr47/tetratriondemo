@@ -1,461 +1,338 @@
-<head>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-  
+<head>
+    
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,600&display=swap"
+    rel="stylesheet"
+  />
   <style>
-   
-   .myimages-container {
-    display: flex;
-    padding: 10px;
-    
-    box-shadow: 0 0 10px rgb(127, 128, 128);
-    border-radius: 2%;
-    
+ 
+.container {
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+}
+.container_contain {
+  display: flex;
+
+  height: 550px;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(180deg, #e6facd 0, #c5e09c 100%);
+}
+.text_info {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+.text_contain {
+  flex-basis: 60%;
+  position: relative;
+  left: 70px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-sizing: border-box;
+
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.text_contain h1 {
+  color: #049c69;
+  font-size: 25px;
+  margin: 5px 3px 5px 5px;
+  padding: 8px;
+}
+.text_contain h2 {
+  color: #049c69;
+  font-size: 4rem;
+  margin: 5px 3px 5px 5px;
+  padding: 8px;
+  font-weight: bolder;
+}
+.text_contain span {
+  font-size: 18px;
+  margin: 5px 5px 5px 5px;
+  padding: 8px;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+.small_text {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.5rem;
+}
+.image_contain {
+  flex-basis: 40%;
+}
+.image_contain img {
+  width: 100%;
+  height: 100%;
+}
+.section1 {
+  position: relative;
+  /* left: 53.2px; */
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 53.2px;
+  padding-right: 52.8px;
+}
+.section1 h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-family: "Inter";
+  font-weight: 800;
+  color: #049c69;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.cotainer_info {
+  display: flex;
+  justify-content: center;
+  margin: 0 30px 0 30px;
+  margin-top: 30px;
+}
+.info {
+  flex-basis: 50%;
+  margin-top: 30px;
+}
+.info ul {
+  margin: 30px;
+  padding: 10px;
+}
+.info ul li {
+  padding: 5px 5px;
+  color: #3a3d41;
+  font-size: 15px;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+.image {
+  flex-basis: 50%;
+}
+.image img {
+  width: 80%;
+  height: 100%;
+}
+.section2 {
+  height: 60px;
+  background-color: #049c69;
+}
+.section2 h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 10px;
+  position: relative;
+  top: 20px;
+
+  color: white;
+}
+.tech_build {
+  height: fit-content;
+  background-color: #f7f7f7;
+  padding: 60px 30px 60px 30px;
+}
+.tech_build h1 {
+  font-size: 45px;
+  font-weight: 800;
+  color: #049c69;
+  margin: 0;
+  position: relative;
+
+  left: 20px;
+}
+.tech_build ul {
+  position: relative;
+
+  left: 20px;
+  display: flex;
+  gap: 3px;
+  width: 100%;
+  padding-inline-start: 0;
+}
+.tech_build ul li {
+  color: black;
+  font-size: 18px;
+  line-height: 1.58;
+  padding: 0 2px 0 2px;
+  font-weight: 400;
+  list-style: none;
+}
+.section4 {
+  height: auto;
+  width: 100%;
+}
+.tech_container {
+  font-size: 45px;
+  font-weight: 700;
+  color: #049c69;
+  text-align: center;
+}
+.tech_info {
+  display: flex;
+  /* flex-wrap: wrap; */
+  overflow-x: scroll;
+  gap: 2rem;
+  position: relative;
+}
+.tech_info_contain {
+  margin: 10px;
+  padding: 10px;
+}
+.tech_info_contain h1 {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Inter";
+}
+.tech_info_contain h2 {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  color: rgb(86, 86, 86);
+  letter-spacing: normal;
+  line-height: 22px;
+  margin-bottom: 0px;
+  text-size-adjust: 100%;
+}
+@media (max-width: 800px) {
+  .tech_info {
+    justify-content: center;
   }
-  
-  .myimage {
-    flex: 1;
-    margin-right: 20px;
-    margin-left: 20px;
-    
+  .cotainer_info {
+    flex-direction: column;
+    margin: 0;
   }
-  
-  .myimage .mypicture {
-    max-width: 100%;
-    height: 90%;
-    display: block;
-    
-    height: 600px;
-    border-radius: 2%;
-    box-shadow: 0 0 5px rgb(127, 128, 128);
+  .container_contain {
+    flex-direction: column;
+    height: auto;
   }
-  
-  .my-text {
-    flex: 2;
-    margin-left: 20px;
-    margin-right: 20px;
+}
+@media (max-width: 650px) {
+  .tech_info {
+    justify-content: center;
   }
-  
-  .my-text h1 {
-    margin-bottom: 10px;
-    line-height: 2;
-    font-weight: 900;
-    font-size: 36px; /* Increase the font size to make it bigger */
-    color: #049c69;
-    border-radius: 10px; /* Add border-radius for round corners */
-    padding: 10px 20px; /* Add some padding for extra roundy appearance */
-    display: inline-block; /* This will make the background rounded to the text */
+  .cotainer_info {
+    flex-direction: column;
+    margin: 0;
   }
-  
-  
-  .my-text p {
-    font-size: 16px;
-    line-height: 1.5;
+  .container_contain {
+    flex-direction: column;
+    height: auto;
   }
-  .myimage-marginright {
-    margin-right: 30%;
+  .tech_container h1 {
+    font-size: 30px;
   }
-  .myimage-marginleft{
-    margin-left: 15%;
-  }
-  
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
-    .myimages-container {
-      flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: 10px; /* Reduce margin between containers */
-    }
-  
-    .myimage {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  
-    .myimage.ml-2 {
-      margin-left: 0; /* Remove left margin for the last image */
-    }
-  
-    .my-text {
-      width: 100%;
-      position: relative;
-      z-index: 1;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-  }
-   
-    h2 {
-      margin-top: 0;
-    }
-    #ts-features {
-    padding: 10px 0; /* Add vertical padding to center the content */
-    text-align: center; /* Center the content horizontally */
-  }
-  
-  .ts-intro {
-    max-width: 800px; /* Set a max width for the content */
-    margin: 0 auto; /* Center the content horizontally */
-  }
-  .banners {
-    background-color: #049c69; /* Green background color */
-    text-align: center; /* Center-align the text */
-    height: 100px;
-    border-radius: 2%;
-    box-shadow: 1px 1px 5px rgb(127, 128, 128);
-  }
-  
-  .banners h1 {
-    color: #fff; /* White text color */
-    font-size: 15px; /* Adjust font size as needed */
-   
-    overflow: hidden; /* Hide overflowing text */
-    text-overflow: ellipsis; /* Display ellipsis (...) for overflowing text */
-    margin-top: 5px;
-    align-items: center;
-  }
-  
-  @media (min-width: 768px) {
-    .banners h1 {
-      font-size: 25px; /* Increase font size for desktop mode */
-    }
-  
-  }
-  
-  /* Large header */
-  
-  #x-canvas{
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0.8;
-    z-index: -1; /* Place the canvas below other content */
-    
-    
-  }
-  .service-header{
-    color: #049c69;
-    font-size: 40px;
-    font-weight: 900;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .footer-text{
-    color: #049c69;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+}
+@media screen and(width:450px) {
+}
+@media screen and(width:350px) {
+}
+
   </style>
-  </head>
-  @@include('header.htm')
-  @@include('blocks/navigation-1.htm')
-  @@include('blocks/page-header.htm', {"title": "Python", "prevpage": "company", "currentpage": "Python"})
-  
-  <section id="main-container" class="main-container">
-    <div class="container">
-      <div class="row">
-          <div class="col-lg-6">
-            <h3 class="column-title">Python</h3>
-           <strong> <p>Derive benefits similar to the ones that many world-class companies do from using Python. Using the Django framework, our Python experts can build a wide spectrum of feature-rich and enterprise-grade applications.</p></strong>
-            
-            <p>Python has enabled our team of experts to meet highly specific and demanding web application needs of customers from various industries.</p>
-              <p></p>
-          </div><!-- Col end -->
-  
-          <div class="col-lg-6 mt-5 mt-lg-0">
-            
-            <div id="page-slider" class="page-slider small-bg">
-  
-                <div class="item" style="background-image:url(images/slider-pages/slide-page1.jpg)">
-                  <div class="container">
-                      <div class="box-slider-content">
-                        <div class="box-slider-text">
-                            <h2 class="box-slide-title">App Development<h2>
-                        </div>    
-                      </div>
-                  </div>
-                </div><!-- Item 1 end -->
-  
-                <div class="item" style="background-image:url(images/slider-pages/slide-page2.jpg)">
-                  <div class="container">
-                      <div class="box-slider-content">
-                        <div class="box-slider-text">
-                            <h2 class="box-slide-title">Web Development</h2>
-                        </div>    
-                      </div>
-                  </div>
-                </div><!-- Item 1 end -->
-  
-                <div class="item" style="background-image:url(images/slider-pages/slide-page3.jpg)">
-                  <div class="container">
-                      <div class="box-slider-content">
-                        <div class="box-slider-text">
-                            <h2 class="box-slide-title">Machine Learning</h2>
-                        </div>    
-                      </div>
-                  </div>
-                </div><!-- Item 1 end -->
-            </div><!-- Page slider end-->          
-          
-  
-          </div><!-- Col end -->
-      </div><!-- Content row end -->
-  
-    </div><!-- Container end -->
-  </section><!-- Main container end -->
-          
-          <strong><h1 class="service-header">Our Solutions.</h1></strong>
-          <ul class="points-list">
-            <strong> <li>Enterprise Application Development</li></strong>
-            <strong> <li>Responsive Web Application Development</li></strong>
-            <strong> <li> Product Development & Customization</li></strong>
-            <strong> <li> Dashboard Apps</li></strong>
-            <strong> <li>Prototype Development</li></strong>
-            <strong> <li>Migration & Porting to Python</li></strong>
-            <strong> <li>Machine Learning, RPA</li></strong>
-            <strong> <li> Mobile Application Development</li></strong>
-            <strong> <li> REST API Backends</li></strong>
-            <strong> <li>Re-engineering & Upgrade of Python Applications</li></strong>
-            
-            <strong> <li>Integration with Web Apps, IoT, 3rd-party Apps & Tools</li></strong>
-            <strong> <li>High-availability Solutions for concurrent traffic read & write</li></strong>
-            <strong> <li>  DB Read Replicas, Memcache, Elastic search, SOLR</li></strong>
-            <strong> <li> SQS, Redis, Supervisor, Workers</li></strong>
-            
-          </ul>
-          <p class="footer-text">A 20+ years old company with 1000+ successful project executions for over 500+ global clients - these numbers are as much a reflection of our ability as they are of our tenacity and steadfastness. We have served numerous clients in their mission-critical projects, and have played our part well in enabling them to emerge as premier companies in their field of work.
-  
-            Withstanding 3 major economic slumps, we are financially sound to face such challenges in the future. A 100% debt-free financial structure gives us the economic freedom to explore and invest in building capabilities. These in turn help us to stay competitive and at the top of our game. Our engagement models are flexible and are adaptable to the needs of our customers.
-            
-            We would not have survived this long if we weren’t good at anticipating and keeping up with the rapid pace of change this industry is accustomed to witnessing.</p>
+</head>
+
+@@include('header.htm')
+@@include('blocks/navigation-1.htm')
+@@include('blocks/page-header.htm', {"title": "About", "prevpage": "company", "currentpage": "About Us"})
+
+  <div class="container">
+    <div class="container_contain">
+      <div class="text_info">
+        <div class="text_contain">
+          <h1>PYTHON DEVELOPMENT COMPANY</h1>
+          <h2>Python</h2>
+          <span
+            >Derive benefits similar to the ones that many world-class
+            companies do from using Python. Using the Django framework, our
+            Python experts can build a wide spectrum of feature-rich and
+            enterprise-grade applications.</span
+          >
+          <br /><br />
+          <div class="small_text">
+            Python has enabled our team of experts to meet highly specific and
+            demanding web application needs of customers from various
+            industries.
           </div>
         </div>
-      
+      </div>
+      <div class="image_contain">
+        <img src="./image/undraw_personal_finance_tqcd.webp" alt="" />
+      </div>
+    </div>
+  </div>
+  <section class="section1">
+    <h1>SOLUTION</h1>
+    <div class="cotainer_info">
+      <div class="info">
+        <ul>
+          <li>Enterprise Application Development</li>
+          <li>Responsive Web Application Development</li>
+          <li>Dashboard Apps</li>
+          <li>Prototype Development</li>
+          <li>Migration & Porting to Python</li>
+          <li>Machine Learning, RPA</li>
+          <li>Mobile Application Development</li>
+          <li>REST API Backends</li>
+          <li>Re-engineering & Upgrade of Python Applications</li>
 
-       
-  <script>
-  // MIT license
-  // By @nodws with github.com/greensock/GreenSock-JS, see more examples at greensock.com/examples-showcases
-  (function() {
-          var lastTime = 0;
-          var vendors = ['ms', 'moz', 'webkit', 'o'];
-          for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
-              window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
-              window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame']
-                  || window[vendors[x]+'CancelRequestAnimationFrame'];
-          }
-  
-          if (!window.requestAnimationFrame)
-              window.requestAnimationFrame = function(callback, element) {
-                  var currTime = new Date().getTime();
-                  var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-                  var id = window.setTimeout(function() { callback(currTime + timeToCall); },
-                      timeToCall);
-                  lastTime = currTime + timeToCall;
-                  return id;
-              };
-  
-          if (!window.cancelAnimationFrame)
-              window.cancelAnimationFrame = function(id) {
-                  clearTimeout(id);
-              };
-      }());
-  
-  
-      (function() {
-  
-      var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
-  
-      // Main
-      initHeader();
-      initAnimation();
-      addListeners();
-  
-      function initHeader() {
-          width = window.innerWidth;
-          height = window.innerHeight;
-          target = {x: width/2, y: height/2};
-  
-          largeHeader = document.getElementById('large-header');
-   
-        largeHeader.style.height = height/0 +'px';
-        largeHeader.style.width = width/0 +'px';
-          canvas = document.getElementById('x-canvas');
-          canvas.width = width;
-          canvas.height = height;
-          ctx = canvas.getContext('2d');
-  
-          // create points
-          points = [];
-          var puntitos=20;
-          for(var x = 0; x < width; x = x + width/puntitos) {
-              for(var y = 0; y < height; y = y + height/puntitos) {
-                  var px = x + Math.random()*width/puntitos;
-                  var py = y + Math.random()*height/puntitos;
-                  var p = {x: px, originX: px, y: py, originY: py };
-                  points.push(p);
-              }
-          }
-  
-          // for each point find the 5 closest points
-          for(var i = 0; i < points.length; i++) {
-              var closest = [];
-              var p1 = points[i];
-              for(var j = 0; j < points.length; j++) {
-                  var p2 = points[j]
-                  if(!(p1 == p2)) {
-                      var placed = false;
-                      for(var k = 0; k < 5; k++) {
-                          if(!placed) {
-                              if(closest[k] == undefined) {
-                                  closest[k] = p2;
-                                  placed = true;
-                              }
-                          }
-                      }
-  
-                      for(var k = 0; k < 5; k++) {
-                          if(!placed) {
-                              if(getDistance(p1, p2) < getDistance(p1, closest[k])) {
-                                  closest[k] = p2;
-                                  placed = true;
-                              }
-                          }
-                      }
-                  }
-              }
-              p1.closest = closest;
-          }
-  
-          // assign a circle to each point
-          for(var i in points) {
-              var c = new Circle(points[i], 2+Math.random()*5, 'rgba(0,102,51)');
-              points[i].circle = c;
-          }
-      }
-  
-      // Event handling
-      function addListeners() {
-          if(!('ontouchstart' in window)) {
-              window.addEventListener('mousemove', mouseMove);
-          }
-        //  window.addEventListener('scroll', scrollCheck);
-          window.addEventListener('resize', resize);
-      }
-  
-      function mouseMove(e) {
-      var posx, posy;
-  
-      if (e.pageX || e.pageY) {
-          posx = e.pageX;
-          posy = e.pageY;
-      } else if (e.clientX || e.clientY) {
-          posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
-          posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
-      }
-  
-      target.x = posx;
-      target.y = posy - (window.pageYOffset || document.documentElement.scrollTop);
-  }
-  
-      /*function scrollCheck() {
-          if(document.body.scrollTop > height) animateHeader = false;
-          else animateHeader = true;
-      }*/
-  
-      function resize() {
-          width = window.innerWidth;
-          height = window.innerHeight;
-          largeHeader.style.height = height+'px';
-          canvas.width = width;
-          canvas.height = height;
-      }
-  
-      // animation
-      function initAnimation() {
-          animate();
-          for(var i in points) {
-              shiftPoint(points[i]);
-          }
-      }
-  
-      function animate() {
-          if(animateHeader) {
-              ctx.clearRect(0,0,width,height);
-              for(var i in points) {
-                  // detect points in range
-                  if(Math.abs(getDistance(target, points[i])) < 4000) {
-                      points[i].active = 0.3;
-                      points[i].circle.active = 0.6;
-                  } else if(Math.abs(getDistance(target, points[i])) < 20000) {
-                      points[i].active = 0.1;
-                      points[i].circle.active = 0.3;
-                  } else if(Math.abs(getDistance(target, points[i])) < 40000) {
-                      points[i].active = 0.02;
-                      points[i].circle.active = 0.1;
-                  } else {
-                      points[i].active = 0;
-                      points[i].circle.active = 0;
-                  }
-  
-                  drawLines(points[i]);
-                  points[i].circle.draw();
-              }
-          }
-          requestAnimationFrame(animate);
-      }
-  
-      function shiftPoint(p) {
-          TweenLite.to(p, 1+1*Math.random(), {x:p.originX-50+Math.random()*50,
-              y: p.originY-50+Math.random()*50, ease:Circ.easeInOut,
-              onComplete: function() {
-                  shiftPoint(p);
-              }});
-      }
-  
-      // Canvas manipulation
-      function drawLines(p) {
-          if(!p.active) return;
-          for(var i in p.closest) {
-              ctx.beginPath();
-              ctx.moveTo(p.x, p.y);
-              ctx.lineTo(p.closest[i].x, p.closest[i].y);
-              ctx.strokeStyle = 'rgba(0,102,51,'+ p.active+')';
-              ctx.stroke();
-          }
-      }
-  
-      function Circle(pos,rad,color) {
-          var _this = this;
-  
-          // constructor
-          (function() {
-              _this.pos = pos || null;
-              _this.radius = rad || null;
-              _this.color = color || null;
-          })();
-  
-          this.draw = function() {
-              if(!_this.active) return;
-              ctx.beginPath();
-              ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
-              ctx.fillStyle = 'rgba(0,102,51,'+ _this.active+')';
-              ctx.fill();
-          };
-      }
-  
-      // Util
-      function getDistance(p1, p2) {
-          return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
-      }
-  
-  })();
-  
-  </script>
-  
-  
+          <li>Integration with Web Apps, IoT, 3rd-party Apps & Tools</li>
+        </ul>
+      </div>
+      <div class="image">
+        <img src="./image/undraw_personal_finance_tqcd.webp" alt="" />
+      </div>
+    </div>
+  </section>
+  <section class="section2">
+    <h1>DOWNLOAD</h1>
+  </section>
+  <section>
+    <div class="tech_build">
+      <h1>Tech Building Blocks</h1>
+      <div class="tech_section">
+        <ul>
+          <li>AI</li>
+          <li>| Microservices</li>
+          <li>| AWS</li>
+          <li>| Severless</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="section4">
+    <div class="tech_container">
+      <h1>Technologies</h1>
+    </div>
+    <div class="tech_info">
+      <div class="tech_info_contain">
+        <h1>Frameworks</h1>
+        <h2>
+          Django, Django REST Framework,<br />
+          Flask, Tornado, Pyramid, GraphQL
+        </h2>
+      </div>
+      <div class="tech_info_contain">
+        <h1>Architecture</h1>
+        <h2>SOA, SPA, MPA, Serverless</h2>
+      </div>
+      <div class="tech_info_contain">
+        <h1>Service Handling</h1>
+        <h2>WCF, REST, JSON, SOAP, AWS, APNS</h2>
+      </div>
+      <div class="tech_info_contain">
+        <h1>Database</h1>
+        <h2>MSSQL, MySQL, MariaDB, PostgreSQL, AWS Dynamo DB, MongoDB</h2>
+      </div>
+      <div class="tech_info_contain">
+        <h1>Tools & Utilities</h1>
+        <h2>PyCharm, Sublime, VSCode</h2>
+      </div>
+    </div>
+  </section>
+
   @@include('footer.htm')
