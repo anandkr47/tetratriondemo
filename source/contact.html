@@ -81,12 +81,7 @@
                   required>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label>Subject</label>
-                <input class="form-control form-control-subject" name="subject" id="subject" placeholder="" required>
-              </div>
-            </div>
+            
           </div>
           <div class="form-group">
             <label>Message</label>
@@ -102,5 +97,47 @@
     </div><!-- Content row -->
   </div><!-- Conatiner end -->
 </section><!-- Main container end -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const errorContainer = form.querySelector(".error-container");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Get form data
+      const formData = new FormData(form);
+
+      // Convert FormData to JSON object
+      const formDataJson = {};
+      formData.forEach((value, key) => {
+        formDataJson[key] = value;
+      });
+
+      // Send POST request
+      fetch("https://emailapi-qsgs.onrender.com/submit-query", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formDataJson),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.success) {
+            // Handle success, e.g., show a success message
+            console.log("Query sent successfully!");
+          } else {
+            // Handle error, e.g., display an error message
+            console.error("Error sending query:", data.error);
+          }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    });
+  });
+</script>
 
 @@include('footer.htm')
