@@ -63,8 +63,7 @@
     <div class="row">
       <div class="col-md-12">
         <h3 class="column-title">We love to hear</h3>
-        <!-- contact form works with formspree.io  -->
-        <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
+        
         <form id="contact-form" action="#" method="post" role="form">
           <div class="error-container"></div>
           <div class="row">
@@ -109,19 +108,10 @@
       // Get form data
       const formData = new FormData(form);
 
-      // Convert FormData to JSON object
-      const formDataJson = {};
-      formData.forEach((value, key) => {
-        formDataJson[key] = value;
-      });
-
       // Send POST request
       fetch("https://emailapi-qsgs.onrender.com/submit-query", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formDataJson),
+        body: formData, // Send the form data as-is
       })
         .then((response) => response.json())
         .then((data) => {
