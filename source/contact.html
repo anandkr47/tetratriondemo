@@ -108,20 +108,19 @@
       // Get form data
       const formData = new FormData(form);
 
-      // Log form data for debugging
-      console.log("Form Data:", formData);
-
       // Convert FormData to JSON object
       const formDataJson = {};
       formData.forEach((value, key) => {
         formDataJson[key] = value;
       });
-      console.log("Form Data JSON:", formDataJson);
 
       // Send POST request
       fetch("https://emailapi-qsgs.onrender.com/submit-query", {
         method: "POST",
-        body: formData, // Send the form data as-is
+        headers: {
+          "Content-Type": "application/json", // Set Content-Type header
+        },
+        body: JSON.stringify(formDataJson), // Convert to JSON before sending
       })
         .then((response) => response.json())
         .then((data) => {
@@ -140,6 +139,7 @@
     });
   });
 </script>
+
 
 
 @@include('footer.htm')
