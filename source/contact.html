@@ -108,6 +108,16 @@
       // Get form data
       const formData = new FormData(form);
 
+      // Log form data for debugging
+      console.log("Form Data:", formData);
+
+      // Convert FormData to JSON object
+      const formDataJson = {};
+      formData.forEach((value, key) => {
+        formDataJson[key] = value;
+      });
+      console.log("Form Data JSON:", formDataJson);
+
       // Send POST request
       fetch("https://emailapi-qsgs.onrender.com/submit-query", {
         method: "POST",
@@ -115,6 +125,7 @@
       })
         .then((response) => response.json())
         .then((data) => {
+          console.log("Response:", data); // Log the response for debugging
           if (data.success) {
             // Handle success, e.g., show a success message
             console.log("Query sent successfully!");
@@ -129,5 +140,6 @@
     });
   });
 </script>
+
 
 @@include('footer.htm')
